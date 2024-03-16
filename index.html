@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/style.css">
-  <link rel="icon" type="image/x-icon" href="/resources/favicon.ico">
-  <title>Pizza Yum-Yum</title>
+  <link rel="icon" type="image/x-icon" href="/resources/Iconarchive-Fat-Sugar-Food-Pizza.512.png">
+  <title>The Smart Pizza Builder Yum-Yum</title>
   
 </head>
 <body>
@@ -29,7 +29,7 @@
   </div>
   <div class="container">
     <div class="left">
-      <img src="./resources/pan.png" alt="" width="55%" class="pan">
+      <img src="./resources/pan.png" alt="" class="pan">
       <img src="./resources/sauce-bbq.png" alt="" id="bbq-sauce" class="souce">
       <img src="./resources/sauce-hot.png" alt="" id="hot-sauce" class="souce">
       <img src="./resources/sauce-marinara.png" alt="" id="marinara" class="souce">
@@ -54,49 +54,55 @@
       <img src="./resources/topping-pineapple.png" alt="" id="pineapple" class="topping">
       <img src="./resources/topping-spinach.png" alt="" id="spinach" class="topping">
       <img src="./resources/topping-tomatoes.png" alt="" id="tomatoes" class="topping">
+      <p class="total">
+        Total:
+        <span id="total-price">
+          0
+        </span>
+      </p>
     </div>
     <div class="right">
       <div class="inputes">
         <h2>1. sauces (+ 500 դրամ)</h2>
         <label>
-          <input type="radio" name="sauce" onchange="souceSelect('marinara')">Marinara
+          <input type="radio" name="sauce" value="500" onchange="souceSelect('marinara')">Marinara
         </label>
         <label>
-          <input type="radio" name="sauce" onchange="souceSelect('hot-sauce')">Hot Sauce
+          <input type="radio" name="sauce" value="500"  onchange="souceSelect('hot-sauce')">Hot Sauce
         </label>
         <label>
-          <input type="radio" name="sauce" onchange="souceSelect('ranch-dressing')">Ranch Dressing
+          <input type="radio" name="sauce" value="500"  onchange="souceSelect('ranch-dressing')">Ranch Dressing
         </label>
         <label>
-          <input type="radio" name="sauce" onchange="souceSelect('bbq-sauce')">BBQ Sauce
+          <input type="radio" name="sauce" value="500"  onchange="souceSelect('bbq-sauce')">BBQ Sauce
         </label>
       </div>
       <h2>2. cheeses</h2>
       <div class="cheese">
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('mozzarella')">Mozzarella (+ 500 դրամ)
+          <input type="radio" name="cheese" value="500"  onchange="cheeseSelect('mozzarella')">Mozzarella (+ 500 դրամ)
         </label>
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('parmesan')">Parmesan (+ 600 դրամ)
+          <input type="radio" name="cheese" value="600"  onchange="cheeseSelect('parmesan')">Parmesan (+ 600 դրամ)
         </label>
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('cheddar-cheese')">Cheddar Cheese (+ 600 դրամ)
+          <input type="radio" name="cheese" value="600"  onchange="cheeseSelect('cheddar-cheese')">Cheddar Cheese (+ 600 դրամ)
         </label>
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('extra-mozzarella')">Extra Mozzarella (+ 1000 դրամ)
+          <input type="radio" name="cheese" value="1000"  onchange="cheeseSelect('extra-mozzarella')">Extra Mozzarella (+ 1000 դրամ)
         </label>
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('so-much-mozz')">So Much Mozz (+ 1500 դրամ)
+          <input type="radio" name="cheese" value="1500"  onchange="cheeseSelect('so-much-mozz')">So Much Mozz (+ 1500 դրամ)
         </label>
         <label>
-          <input type="radio" name="cheese" onchange="cheeseSelect('extra-cheddar')">Extra Cheddar (+ 1200 դրամ)
+          <input type="radio" name="cheese" value="1200"  onchange="cheeseSelect('extra-cheddar')">Extra Cheddar (+ 1200 դրամ)
 
         </label>
       </div>
       <h2>3. toppings</h2>
       <div class="topping">
         <label>
-          <input type="checkbox" name="topping" value="pepperoni" onchange="onToppingSelect()">Pepperoni (+ 800 դրամ)
+          <input type="checkbox" name="topping"  value="pepperoni" onchange="onToppingSelect()">Pepperoni (+ 800 դրամ)
         </label>
         <label>
           <input type="checkbox" name="topping" value="peppers" onchange="onToppingSelect()">Peppers (+ 300 դրամ)
