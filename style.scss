@@ -10,7 +10,7 @@ body{
     text-align: center;
     
     .back{
-        font-size: 130px;
+        font-size: 90px;
         opacity: .07;
         background-color: white;
     }
@@ -84,7 +84,7 @@ body{
         text-transform: uppercase;
         color: white;
         font-size: 16px;
-        font-weight: 200;
+        font-weight: 600;
         letter-spacing: 1px;
         padding: 13px 20px 13px;
         outline: 0;
@@ -149,7 +149,7 @@ body{
 .total{
     font-size: 30px;
     font-weight: 700;
-    padding-left: 160px;
+    padding-left: 125px;
 }
 
 @media (max-width: 430px) {
@@ -173,7 +173,7 @@ body{
         }
     }
     .container{
-        display: flex;
+        flex-direction: column;
         .left{
             position: relative;
             padding-left: 100px;
@@ -192,7 +192,7 @@ body{
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            max-height: 145px;
+            max-height: none;
             label{
                 padding: 5px;
             }
@@ -202,7 +202,7 @@ body{
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            max-height: 250px;
+            max-height: none;
             label{
                 padding: 5px;
             }
@@ -213,6 +213,9 @@ body{
     }
     .menu img{
         width: 15%;
+    }
+    .total{
+        padding-left: 0;
     }
          
 }
